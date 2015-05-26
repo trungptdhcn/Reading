@@ -1,12 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
-    <TextView
-            android:id="@+id/text"
+              android:layout_height="match_parent"
+              android:background="@drawable/startscreenback">
+
+    <LinearLayout
+            android:id="@+id/menu_fragment_llButtonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="203dp"
+            android:layout_marginLeft="@dimen/size_mini"
+            android:layout_marginRight="@dimen/size_mini"
+          >
+        <ImageView
+                android:id="@+id/menu_fragment_ivManagerUsers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/button_user_selector"
+                android:clickable="true"
+                android:layout_weight="1"/>
+        <ImageView
+                android:id="@+id/menu_fragment_ivCreatedLesson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/button_create_selector"
+                android:clickable="true"
+                android:layout_weight="1"/>
+        <ImageView
+                android:id="@+id/menu_fragment_ivSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/button_setting_selector"
+                android:clickable="true"
+                android:layout_weight="1"/>
+        <ImageView
+                android:id="@+id/menu_fragment_ivProsgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/button_progress_selector"
+                android:clickable="true"
+                android:layout_weight="1"/>
+    </LinearLayout>
+    <ImageView
+            android:id="@+id/menu_fragment_ivStart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello world"/>
+            android:src="@drawable/button_start_selector"
+            android:clickable="true"
+            android:layout_below="@+id/menu_fragment_llButtonContainer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size_mini"/>
 
-</LinearLayout>
+</RelativeLayout>

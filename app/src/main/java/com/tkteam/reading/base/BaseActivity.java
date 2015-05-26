@@ -38,7 +38,7 @@ public class BaseActivity<T> extends FragmentActivity
     {
         BaseFragment baseFragment = event.getBaseFragment();
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.setCustomAnimations(R.anim.enter,0);
+        fragmentTransaction.setCustomAnimations(R.anim.enter,R.anim.exit,R.anim.enter,R.anim.exit);
         fragmentTransaction.replace(R.id.container, baseFragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();

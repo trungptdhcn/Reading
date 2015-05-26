@@ -5,4 +5,9 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <!--==========================Dialog animation style=============================-->
+    <style name="dialog_anim_style">
+        <item name="android:windowEnterAnimation">@anim/enter</item>
+        <item name="android:windowExitAnimation">@anim/exit</item>
+    </style>
 </resources>
