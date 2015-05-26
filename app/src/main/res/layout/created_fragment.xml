@@ -4,5 +4,23 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:background="@drawable/createscreenbackground">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="56dp">
+        <ImageView
+                android:id="@+id/created_fragment_ivAdd"
+                style="@style/button"
+                android:src="@drawable/button_add_story_selector"
+                android:layout_weight="1"
+                />
+        <ImageView
+                android:id="@+id/created_fragment_ivDelete"
+                style="@style/button"
+                android:src="@drawable/button_delete_story_selector"
+                android:layout_weight="1"
+                />
+    </LinearLayout>
 
 </LinearLayout>

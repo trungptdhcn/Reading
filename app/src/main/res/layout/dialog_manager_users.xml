@@ -8,9 +8,8 @@
             android:layout_height="wrap_content"
             android:background="@drawable/popup">
         <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/btndone"
+                style="@style/button"
+                android:src="@drawable/button_done_selector"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="@dimen/size_mini"
                 android:layout_marginRight="@dimen/size_mini"
