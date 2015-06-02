@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import com.tkteam.reading.R;
 import com.tkteam.reading.base.event.ChangedFragmentEvent;
+import com.tkteam.reading.service.UserService;
 import com.tkteam.reading.ui.fragment.MenuFragment;
 import de.greenrobot.event.EventBus;
 

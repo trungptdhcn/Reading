@@ -16,18 +16,29 @@ public class CustomDialog extends AlertDialog
 {
     public Context context;
     public int layout;
+    private View rootView;
 
     public CustomDialog(Context context)
     {
         super(context);
     }
 
-    public CustomDialog(Context context,int layout, int styleAnimation)
+    public CustomDialog(Context context, int layout, int styleAnimation)
     {
         super(context);
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View rootView = layoutInflater.inflate(layout, null);
+        rootView =layoutInflater.inflate(layout, null);
         setView(rootView);
         this.getWindow().getAttributes().windowAnimations = styleAnimation;
+    }
+
+    public View getRootView()
+    {
+        return rootView;
+    }
+
+    public void setRootView(View rootView)
+    {
+        this.rootView = rootView;
     }
 }

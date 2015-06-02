@@ -3,12 +3,29 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+        <item name="android:typeface">serif</item>
     </style>
-    <!--==================Button============================-->
-    <style name="button">
+    <!--======================TEXT================================-->
+    <style name="Text">
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="TextBold">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--==================View============================-->
+    <style name="view">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="button" parent="view">
         <item name="android:clickable">true</item>
+    </style>
+    <style name="checkbox" parent="view">
+        <item name="android:button">@null</item>
     </style>
     <!--==========================Dialog animation style=============================-->
     <style name="dialog_anim_style">

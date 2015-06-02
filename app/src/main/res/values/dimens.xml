@@ -9,4 +9,11 @@
     <dimen name="size_normal">64dp</dimen>
     <dimen name="size_large">128dp</dimen>
     <dimen name="size_huge">256dp</dimen>
+    <!--==============================spacing=====================================-->
+    <dimen name="spacing_mini">1dp</dimen>
+    <dimen name="spacing_tiny">2dp</dimen>
+    <dimen name="spacing_small">5dp</dimen>
+    <dimen name="spacing_normal">10dp</dimen>
+    <dimen name="spacing_large">25dp</dimen>
+    <dimen name="spacing_huge">40dp</dimen>
 </resources>

@@ -14,6 +14,73 @@
                 android:layout_marginTop="@dimen/size_mini"
                 android:layout_marginRight="@dimen/size_mini"
                 />
+        <LinearLayout
+                android:id="@+id/dialog_manager_users_llButtonContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+            <RelativeLayout
+                    android:id="@+id/dialog_manager_users_rlAddUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/spacing_normal">
+                <ImageView
+                        android:id="@+id/dialog_manager_users_btAddUser"
+                        style="@style/button"
+                        android:src="@drawable/button_add_user_selector"/>
+                <TextView
+                        style="@style/TextBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/spacing_normal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/dialog_manager_users_btAddUser"
+                        android:text="@string/string_text_add_new_user"/>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/dialog_manager_users_rlEditUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/spacing_normal">
+                <ImageView
+                        android:id="@+id/dialog_manager_users_btEditUser"
+                        style="@style/button"
+                        android:src="@drawable/button_edit_user_selector"/>/>
+                <TextView
+                        style="@style/TextBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/spacing_normal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/dialog_manager_users_btEditUser"
+                        android:text="@string/string_text_edit_user"/>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/dialog_manager_users_rlDeleteUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <ImageView
+                        android:id="@+id/dialog_manager_users_btDeleteUser"
+                        style="@style/button"
+                        android:src="@drawable/button_delete_user_selector"/>
+                <TextView
+                        style="@style/TextBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/spacing_normal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/dialog_manager_users_btDeleteUser"
+                        android:text="@string/string_text_edit_user"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <GridView
+                android:id="@+id/dialog_manager_users_gridViewUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dialog_manager_users_llButtonContainer"
+                android:numColumns="auto_fit"
+                />
     </RelativeLayout>
-
 </LinearLayout>
